@@ -4,12 +4,11 @@ int *plusOne(int *digits, int digitsSize, int *returnSize) {
     int *ret, carry = 1;
 
     for (int i = digitsSize - 1; i >= 0; --i) {
-        int *ptr = digits + i;
-        if (*ptr + carry == 10) {
-            *ptr = 0;
+        if (*(digits + i) + carry == 10) {
+            *(digits + i) = 0;
             carry = 1;
         } else {
-            *ptr = *ptr + carry;
+            *(digits + i) = *(digits + i) + carry;
             carry = 0;
             break;
         }

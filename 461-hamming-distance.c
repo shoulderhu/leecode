@@ -1,4 +1,4 @@
-int hammingDistance(int x, int y){
+int hammingDistance(int x, int y) {
     int distance = 0;
 
     for (int i = 0; i < 31; ++i) {
