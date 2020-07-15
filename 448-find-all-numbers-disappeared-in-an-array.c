@@ -20,6 +20,8 @@
     return ret;
 }*/
 
+#include <stdlib.h>
+
 int *findDisappearedNumbers(int *nums, int numsSize, int *returnSize) {
     int *ret = (int *)malloc(numsSize * sizeof(int));
     int tmp;
